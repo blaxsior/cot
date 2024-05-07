@@ -17,10 +17,10 @@ from math import sqrt, ceil
 N = int(input())
 
 def getPositiveRoot(x: int) -> float:
-  return (sqrt(1 + 8*x) - 1) / 2
+  return (sqrt(1 + 8*x) + 1) / 2
 
 # 1은 기본 값
-result = ceil(getPositiveRoot(ceil((N - 1) / 6))) + 1
+result = ceil(getPositiveRoot((N - 1) / 6))
 print(result)
 
 
